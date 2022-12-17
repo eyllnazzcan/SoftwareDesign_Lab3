@@ -1,0 +1,11 @@
+<div *ngIf="playlist">
+  <h2>{{playlist.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{playlist.id}}</div>
+  <div>
+    <label for="playlist-name">Playlist name: </label>
+    <input id="playlist-name" [(ngModel)]="playlist.name" placeholder="Playlist name"/>
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">save</button>
+</div>
+

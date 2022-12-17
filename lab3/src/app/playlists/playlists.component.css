@@ -1,0 +1,97 @@
+.playlists {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+input {
+  padding: 0.5rem;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: block;
+  color: rgb(188, 136, 236);
+  background-color: #62abb1c0;
+  transition: width 0.4s ease-in-out;
+  background-image: url('http://www.kirupa.com/images/search.png');
+  background-position: 2px -9px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+.playlists li {
+  position: relative;
+  cursor: pointer;
+}
+
+.playlists li:hover {
+  left: 0.1em;
+}
+
+.playlists a {
+  color: rgb(12, 1, 1);
+  text-decoration: none;
+  background-color: rgb(156, 139, 177);
+  margin: 0.5em;
+  padding: 0.3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+
+.playlists a:hover {
+  color: #f9fcfd;
+  background-color: #e6e6e6;
+}
+
+.playlists a:active {
+  background-color: #9e5858;
+  color: #fafafa;
+}
+
+.playlists .badge {
+  display: inline-block;
+  font-size: small;
+  color: rgb(255, 254, 254);
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #08294d;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: 0.8em;
+  border-radius: 4px 0 0 4px;
+  background-image: url('https://soundazed.s3.us-east-2.amazonaws.com/wp-content/uploads/2019/07/08211112/Soundazed-Chill-Wave-by-grad_ster.jpg');
+}
+
+.add-button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-button:hover {
+  color: rgb(247, 242, 242);
+  background-color: #42545c;
+}
+
+button.delete {
+  position: absolute;
+  left: 210px;
+  top: 5px;
+  background-color: rgb(249, 250, 250);
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1px 10px 3px 10px;
+  background-image: url('https://studybreaks.com/wp-content/uploads/2021/08/cover_image_-_niche_spotify_playlists.jpg?ezimgfmt=rs:0x0/rscb6/ngcb6/notWebP');
+}
+
+button.delete:hover {
+  background-color: #525252;
+  color: rgb(7, 99, 22);
+}

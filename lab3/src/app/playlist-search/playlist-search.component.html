@@ -1,0 +1,13 @@
+<div id="search-component">
+  <label for="search-box">Playlist Search</label>
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+
+  <ul class="search-result">
+    <li *ngFor="let playlist of playlists$ | async" >
+      <a routerLink="/detail/{{playlist.id}}">
+        {{playlist.name}}
+      </a>
+    </li>
+  </ul>
+</div>
+

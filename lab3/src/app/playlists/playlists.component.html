@@ -1,0 +1,19 @@
+<h2>My Playlists</h2>
+
+<div>
+  <label for="new-playlist">Playlist name: </label>
+  <input id="new-playlist" #playlistName />
+  <button type="button" class="add-button" (click)="add(playlistName.value); playlistName.value=''">
+    Add playlist
+  </button>
+</div>
+
+<ul class="playlists">
+  <li *ngFor="let playlist of playlists">
+    <a routerLink="/detail/{{playlist.id}}">
+      <span class="badge">{{playlist.id}}</span> {{playlist.name}}
+    </a>
+    <button type="button" class="delete" title="delete playlist"
+      (click)="delete(playlist)">x</button>
+  </li>
+</ul>

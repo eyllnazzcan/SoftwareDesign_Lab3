@@ -1,0 +1,55 @@
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+
+}
+input {
+  padding: .5rem;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: block;
+  color: rgb(188, 136, 236);
+
+  background-color: #62abb1c0;
+  transition: width 0.4s ease-in-out;
+  background-image: url('http://www.kirupa.com/images/search.png');
+  background-position: 2px -9px;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+
+}
+
+input:focus {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+.search-result li a {
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+.search-result li a:hover {
+  background-color: #435A60;
+  color: rgb(255, 255, 255);
+}
+
+ul.search-result {
+  margin-top: 0;
+  padding-left: 0;
+  
+}
